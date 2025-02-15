@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Produk</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #e3c3c3; padding: 8px; text-align: left; }
+        th { background-color: #077a6b; }
+        button { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Halaman Produk</h1>
+    <button onclick="window.location.href='tambah-produk.html'">Tambah Produk</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Kode Produk</th>
+                <th>Nama Produk</th>
+                <th>Kategori</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P0001</td>
+                <td>Helm</td>
+                <td>Aksesoris</td>
+                <td><button onclick="hapusProduk(this)">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>P0002</td>
+                <td>Sarung Tangan</td>
+                <td>Aksesoris</td>
+                <td><button onclick="hapusProduk(this)">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>P0003</td>
+                <td>Oli Motor</td>
+                <td>Oli</td>
+                <td><button onclick="hapusProduk(this)">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>P0004</td>
+                <td>Mesin Cuci</td>
+                <td>Aksesoris</td>
+                <td><button onclick="hapusProduk(this)">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>P0005</td>
+                <td>Jeruk</td>
+                <td>Buah</td>
+                <td><button onclick="hapusProduk(this)">Hapus</button></td>
+            </tr>
+            tr>
+                <td>P0006</td>
+                <td>Kangkung</td>
+                <td>Sayuran</td>
+                <td><button onclick="hapusProduk(this)">Hapus</button></td>
+            </tr>
+        </tbody>
+        <div class="sidebar">
+            <a href="#">Beranda</a>
+            <a href="#">Produk</a>
+            <a href="#">Kategori</a>
+            <a href="#">User</a>
+            <a href="#">Keluar</a>
+        </div>
+    </table>
+
+    <script>
+        function hapusProduk(button) {
+            alert('Berhasil menghapus produk');
+            // Bisa ditambahkan logika untuk menghapus baris dari tabel
+            const row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</body>
+</html>

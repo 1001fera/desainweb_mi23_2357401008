@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Kategori - Admin</title>
+    
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .sidebar { float: left; width: 150px; }
+        .content { margin-left: 170px; }
+        .kategori-list a { color: rgb(0, 200, 255); text-decoration: none; margin-left: 10px; }
+        .kategori-list a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>Beranda</li>
+
+            <li>Produk</li>
+
+            <li>Kategori</li>
+
+            <li>User</li>
+            
+            <li>Keluar</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Halaman Admin</h1>
+        <h3>Kategori</h3>
+        <button onclick="window.location.href='tambah_kategori.html'">Tambah Kategori</button>
+        <div class="kategori-list">
+            <ul>
+                 <li>Aksesoris <a href="#" onclick="hapusKategori()">Hapus</a></li>
+                    <li>Oli <a href="#" onclick="hapusKategori()">Hapus</a></li>
+                    <li>Sparepart <a href="#" onclick="hapusKategori() ">Hapus</a></li>
+                    <li>Helm <a href="#" onclick="hapusKategori()">Hapus</a></li>
+                 <li>Jaket <a href="#" onclick="hapusKategori()">Hapus</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function hapusKategori() {
+            alert('Berhasil menghapus kategori');
+        }
+    </script>
+</body>
+</html>

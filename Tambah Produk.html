@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Produk</title>
+    <style>
+        
+        body { font-family: Arial, sans-serif; }
+        .form-container { max-width: 400px; margin: 20px auto; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 10px; padding: 8px 12px; cursor: pointer; }
+        a { display: inline-block; margin-top: 10px; color: rgb(0, 187, 255); text-decoration: none; }
+    </style>
+</head>
+    <h1>Tambah Produk</h1>
+</head>
+<!-- Sidebar -->
+<div class="sidebar">
+   <a href="#">Beranda</a>
+   <a href="#">Produk</a>
+   <a href="#">Kategori</a>
+   <a href="#">User</a>
+   <a href="#">Keluar</a>
+</div>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="kode_produk">Kode Produk:</label>
+            <input type="text" id="kode_produk" name="kode_produk" required>
+
+            <label for="nama_produk">Nama Produk:</label>
+            <input type="text" id="nama_produk" name="nama_produk" required>
+
+            <label for="kategori">Kategori:</label>
+            <select id="kategori" name="kategori" required>
+                <option value="">Pilih Kategori</option>
+                <option value="aksesoris">Aksesoris</option>
+                <option value="oli">Oli</option>
+                <option value="aksesoris">Buah</option>
+                <option value="oli">Sayur</option>
+            </select>
+
+            <label for="deskripsi">Deskripsi:</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4"></textarea>
+
+            <img src="P.0001_Helm.jpg" width="80">
+            <img src="P.0002_SarungTangan.jpg" width="80">
+            <img src="P.0003_Oli Motor.jpg" width="80">
+            <img src="P.0004_MesinCuci.jpg" width="80">
+            <img src="P.0005_Jeruk.png" width="80">
+            <img src="P.0006_Kangkung.jpg" width="80">
+
+
+            <a href="produk.html">Kembali</a>
+            
+            <button type="submit">Simpan Produk</button>
+        </form>
+    </div>
+</body>
+</html>
